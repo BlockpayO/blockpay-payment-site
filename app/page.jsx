@@ -182,18 +182,22 @@ const PaymentPage = () => {
 
   return (
     <main className="flex justify-center h-full bg-[#1856F3]">
-      <div className="flex justify-center max-h-full items-center p-12">
+      <button onClick={() => (wallet ? disconnect(wallet) : connect())}>
+        {connecting ? "Connecting" : wallet ? "Disconnect" : "Connect Wallet"}
+      </button>
+      {/* <div className="flex justify-center max-h-full items-center p-12">
         <div className="flex flex-col rounded-3xl justify-center items-center bg-[#f7f7f7] py-7 px-6 w-[525px]">
           <div className="grid w-full mb-3">
             <div className="flex justify-between">
-              {/* <Link href="/user/payments" className="flex-row order-first">
-                <div className="flex justify-start cursor-pointer">
-                  <Image src={backarrow} alt="backarrow" className="w-6 h-6" />
-                  <p className="ml-2 text-sm text-color">Back</p>
-                </div>
-              </Link> */}
+             
               <button
-                className={`border border-gray-200 px-4 py-2 rounded-md text-gray-100 bg-blue-500 border border-none hover:bg-blue-700`}
+                className={`border border-gray-200 px-4 py-2 rounded-md text-gray-100 bg-blue-500 border border-none hover:bg-blue-700${
+                  connecting
+                    ? "bg-gray-500"
+                    : wallet
+                    ? "bg-red-500 border border-none hover:bg-red-700"
+                    : "bg-blue-500 border border-none hover:bg-blue-700"
+                }`}
                 disabled={connecting}
                 onClick={() => (wallet ? disconnect(wallet) : connect())}
               >
@@ -289,7 +293,6 @@ const PaymentPage = () => {
                       3
                     )} MATIC`
                   : ` Pay ${Number(maticAmount).toFixed(3)} MATIC`}
-                {/* {` Pay ${Number(maticAmount).toFixed(3)} MATIC`} */}
               </button>
             </div>
             <div className="w-full flex justify-between ">
@@ -300,7 +303,7 @@ const PaymentPage = () => {
             </div>
           </form>
         </div>
-      </div>
+      </div> */}
     </main>
   );
 };
