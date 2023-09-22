@@ -2,6 +2,7 @@ import "./globals.css";
 import localFont from "next/font/local";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
 const aeonik = localFont({
   src: [
     {
