@@ -27,6 +27,11 @@
     "dotenv": "^16.3.1",
     "ethers": "^6.7.1",
     "firebase": "^10.3.0",
-    "react-loader-spinner": "^5.4.5"
+    "react-loader-spinner": "^5.4.5",
+    "@chakra-ui/icons": "^2.1.1",
+    "@chakra-ui/react": "^2.8.1",
+    "@chakra-ui/theme": "^3.3.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0"
   }
 }

@@ -1,6 +1,7 @@
 import "./globals.css";
 import localFont from "next/font/local";
-
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const aeonik = localFont({
   src: [
     {
@@ -44,6 +45,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${aeonik.className}`}>
         <main>{children}</main>
+        <ToastContainer />
       </body>
     </html>
   );

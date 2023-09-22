@@ -28,7 +28,7 @@ const HELP = `<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/200
 </g>
 </svg>`;
 
-const apiKey = "7ace9320-5f4f-42d7-a89f-f38553654585";
+const apiKey = "aada709f-a688-4644-a6cf-eb2eaa30e8aa";
 
 const INFURA_KEY = "270e676f9e754dd2a6d1bfbecf296c04";
 
@@ -39,7 +39,7 @@ const wcV2InitOptions = {
   /**
    * Project ID associated with [WalletConnect account](https://cloud.walletconnect.com)
    */
-  projectId: "68e6a9128d33db007d0f2261c25a3bad",
+  projectId: "9790453fd33223d4efbbf14b54dea091",
 
   requiredChains: [137, 80001],
 };
