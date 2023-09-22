@@ -17,12 +17,12 @@ import { addDoc, serverTimestamp } from "firebase/firestore";
 import { convertIcon } from "@/public/assets/images";
 import { toast } from "react-toastify";
 import useContract from "./useContract";
-import connectWallet from "./connect";
+import ConnectWallet from "./connect";
 
 const PaymentPage = () => {
   const { contract } = useContract();
   const { provider, wallet, connecting, connected, connect, disconnect } =
-    connectWallet();
+    ConnectWallet();
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");

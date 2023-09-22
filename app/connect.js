@@ -77,6 +77,7 @@ const ConnectWallet = () => {
   const [networkError, setNetworkError] = useState(false);
 
   useEffect(() => {
+    console.log("trying to connect 1");
     let ethersProvider;
 
     const handleDisconnect = () => {
@@ -93,6 +94,7 @@ const ConnectWallet = () => {
 
     if (wallet) {
       try {
+        console.log("trying to connect 2");
         ethersProvider = new ethers.BrowserProvider(wallet.provider, "any");
 
         // Check if ethersProvider is valid before setting it
