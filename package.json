@@ -1,0 +1,32 @@
+{
+  "name": "blockpay-payment-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "autoprefixer": "10.4.16",
+    "eslint": "8.49.0",
+    "eslint-config-next": "13.5.2",
+    "next": "13.5.2",
+    "postcss": "8.4.30",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-toastify": "^9.1.3",
+    "tailwindcss": "3.3.3",
+    "@web3-onboard/coinbase": "^2.2.4",
+    "@web3-onboard/core": "^2.20.4",
+    "@web3-onboard/injected-wallets": "^2.10.1",
+    "@web3-onboard/react": "^2.8.9",
+    "@web3-onboard/trust": "^2.0.4",
+    "@web3-onboard/walletconnect": "^2.4.0",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.7.1",
+    "firebase": "^10.3.0",
+    "react-loader-spinner": "^5.4.5"
+  }
+}

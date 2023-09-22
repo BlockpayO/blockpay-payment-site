@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Open+Sans:wght@300&family=Oswald:wght@200&family=Roboto+Mono&subset=greek,cyrillic&family=Poppins:wght@200&family=Raleway:wght@300&family=Inter:wght@300&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg {
+  background: #f7f7f7;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.main {
+  width: full;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.text-head {
+  font-size: 47px;
+  font-weight: 500;
+  line-height: 4.375rem;
+}
+
+@media screen and (max-width: 640px) {
+  .main {
+    padding: 0;
+  }
+}
+
+.button {
+  background-color: #1856f3;
+  color: #f7f7f7;
+  width: 6.75rem;
+  height: 2.5rem;
+  font-size: large;
+}
+
+.nav-text {
+  color: #4f7df2e6;
+}
+
+.text-color {
+  color: #1856f3;
+}
+
+.bg-hover:hover {
+  color: #1856f3;
+  text-decoration-line: underline;
+  text-decoration-color: #1856f3;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+}
+
+.card-icon {
+  width: 65px;
+  height: 65px;
+  justify-items: center;
+}
+
+.card-head {
+  color: #201e1e;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.card-desc {
+  color: #171616;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.h2 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.user:hover {
+  color: white;
+  background-color: #1856f3;
+  cursor: pointer;
+}
