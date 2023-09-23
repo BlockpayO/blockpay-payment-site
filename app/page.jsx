@@ -30,7 +30,10 @@ import {
   useContract,
   useAddress,
   useContractEvents,
+  lightTheme,
+  darkTheme,
 } from "@thirdweb-dev/react";
+import { logo } from "../public/assets/images";
 const PaymentPage = () => {
   // const { provider, wallet, connecting, connected, connect, disconnect } =
   //   connectWallet();
@@ -212,7 +215,28 @@ const PaymentPage = () => {
                     ? "Disconnect"
                     : "Connect Wallet"}
                 </button> */}
-              <ConnectWallet btnTitle="Connect Wallet" modalSize="wide" />
+              <ConnectWallet
+                className="thirdweb-button"
+                theme={lightTheme({
+                  fontFamily: "Inter, sans-serif",
+                  colors: {
+                    connectedButtonBg: "#fff",
+                    connectedButtonBgHover: "#fff",
+                    primaryButtonBg: "#1856F3",
+                  },
+                })}
+                btnTitle="Connect Wallet"
+                modalSize="wide"
+                welcomeScreen={{
+                  title: "Blockpay",
+                  subtitle: "Your Personal Subscription Manager",
+                  img: {
+                    src: "https://i.ibb.co/X43WR4t/blockpaylogo.png",
+                    width: 300,
+                    height: 50,
+                  },
+                }}
+              />
             </div>
             <h2 className="text-3xl mb-3 font-medium text-color mt-[25px] flex justify-center">
               {paymentDetails?.planName}
