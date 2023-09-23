@@ -2,7 +2,7 @@ import "./globals.css";
 import localFont from "next/font/local";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import { ThirdwebProvider } from "./ThirdwebProvider";
 const aeonik = localFont({
   src: [
     {
@@ -45,8 +45,13 @@ export default function RootLayout({ children }) {
         <title>Blockpay payment site</title>
       </head>
       <body className={`${aeonik.className}`}>
-        <main>{children}</main>
-        <ToastContainer />
+        <ThirdwebProvider
+          activeChain="mumbai"
+          clientId="13f67df54a3a7c396e1167c2d49cd99f"
+        >
+          <main>{children}</main>
+          <ToastContainer />
+        </ThirdwebProvider>
       </body>
     </html>
   );
