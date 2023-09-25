@@ -122,7 +122,7 @@ const PaymentPage = () => {
       const promise = await toast.promise(
         async () => {
           const paymentTx = await mutateAsync({
-            args: [address, paymentId, firstName, lastName, email],
+            args: [paymentId, firstName, lastName, email],
             overrides: { value: ethers.utils.parseEther(maticAmount) },
           });
           console.log(
