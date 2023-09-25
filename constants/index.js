@@ -1,5 +1,5 @@
 export const blockpayFactoryContractAddress =
-  "0xAa8D860dbE73bd71ff5e19a34cdFE56dA6b6c2E0";
+  "0xdf89C8fE6e18CE552Acba97f37BCF452Af5ccbfc";
 export const blockpayFactoryContractABI = [
   {
     inputs: [
@@ -49,12 +49,6 @@ export const blockpayFactoryContractABI = [
   {
     anonymous: false,
     inputs: [
-      {
-        indexed: false,
-        internalType: "address",
-        name: "planCreator",
-        type: "address",
-      },
       {
         indexed: false,
         internalType: "address",
@@ -164,10 +158,7 @@ export const blockpayFactoryContractABI = [
     type: "function",
   },
   {
-    inputs: [
-      { internalType: "address", name: "_contractCreator", type: "address" },
-      { internalType: "string", name: "_paymentId", type: "string" },
-    ],
+    inputs: [{ internalType: "string", name: "_paymentId", type: "string" }],
     name: "getContractById",
     outputs: [{ internalType: "contract Blockpay", name: "", type: "address" }],
     stateMutability: "view",
@@ -202,10 +193,7 @@ export const blockpayFactoryContractABI = [
     type: "function",
   },
   {
-    inputs: [
-      { internalType: "address", name: "_contractCreator", type: "address" },
-      { internalType: "string", name: "_paymentId", type: "string" },
-    ],
+    inputs: [{ internalType: "string", name: "_paymentId", type: "string" }],
     name: "getPaymentPlanBpF",
     outputs: [
       {
@@ -246,7 +234,6 @@ export const blockpayFactoryContractABI = [
   },
   {
     inputs: [
-      { internalType: "address", name: "_contractCreator", type: "address" },
       { internalType: "string", name: "_paymentId", type: "string" },
       { internalType: "address", name: "_user", type: "address" },
     ],
@@ -310,7 +297,6 @@ export const blockpayFactoryContractABI = [
   },
   {
     inputs: [
-      { internalType: "address", name: "_contractCreator", type: "address" },
       { internalType: "string", name: "_paymentId", type: "string" },
       { internalType: "string", name: "_firstName", type: "string" },
       { internalType: "string", name: "_lastname", type: "string" },
