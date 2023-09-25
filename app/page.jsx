@@ -143,6 +143,7 @@ const PaymentPage = () => {
       );
     } catch (err) {
       toast.error("Payment unsuccessful");
+      console.log(err);
       setPaymentStatus(false);
     }
   };
